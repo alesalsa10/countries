@@ -27,21 +27,26 @@ export default function Countries() {
 
   return (
     <div>
-      
-      <input
-        type='text'
-        name='country'
-        id='country'
-        placeholder='Search for a country'
-      />
-      <select name='countries' id='countries' onChange={handleRegionChange}>
-        <option value='All'>All</option>
-        <option value='Africa'>Africa</option>
-        <option value='Americas'>Americas</option>
-        <option value='Asia'>Asia</option>
-        <option value='Europe'>Europe</option>
-        <option value='Oceania'>Oceania</option>
-      </select>
+      <div className='topRow'>
+        <div>
+          <input
+            type='text'
+            name='country'
+            id='countrySearch'
+            placeholder='Search for a country...'
+          />
+        </div>
+        <div className='selectDropdown'>
+          <select name='countries' id='countriesDropdown' onChange={handleRegionChange}>
+            <option value='All'>All</option>
+            <option value='Africa'>Africa</option>
+            <option value='Americas'>Americas</option>
+            <option value='Asia'>Asia</option>
+            <option value='Europe'>Europe</option>
+            <option value='Oceania'>Oceania</option>
+          </select>
+        </div>
+      </div>
 
       {data && (
         <div className='countries'>

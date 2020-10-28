@@ -30,6 +30,23 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .countryInfo {
+      display: block;
+    }
+    .countryFlag{
+        width: 300px;
+        height: 200px;
+    }
+    .moreInfo{
+        margin-top: 2rem;
+    }
+    .header{
+        font-size: x-small;
+    }
+  }
+  
+
 .countryName{
     grid-column: 2 / span 2;
     grid-row: 1;
@@ -47,7 +64,6 @@
 .header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
 }
 
 .themeSwitcher{
@@ -55,3 +71,25 @@
     justify-self: end;
 }
 
+#header{
+    margin-left: 1rem;
+}
+
+.topRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+}
+
+.selectDropdown{
+    justify-self: end;
+}
+
+#countrySearch{
+    border: none;
+    height:50px;
+}
+
+#countriesDropdown{
+    width: 150px;
+}
