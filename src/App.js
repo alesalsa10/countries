@@ -3,17 +3,19 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Countries from './components/Countries';
 import Country from './components/Country';
+import Header from './components/Header'
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path='/:id' children={<Country />} />
-        <Route exact path='/'>
-          <Countries/>
-        </Route>
-      </Switch>
-    </Router>
+      <Router>
+        <Header/>
+        <Switch>
+          <Route path='/:id' children={<Country />} />
+          <Route exact path='/'>
+            <Countries />
+          </Route>
+        </Switch>
+      </Router>
   );
 }
 

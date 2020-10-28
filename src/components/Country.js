@@ -16,7 +16,7 @@ export default function Country() {
   }, [id]);
 
   return (
-    <div>
+    <div className='country'>
       {data &&
         data.map((info) => (
           <div className='countryInfo'>

@@ -27,7 +27,7 @@ export default function Countries() {
 
   return (
     <div>
-      <h1>Where in the world?</h1>
+      
       <input
         type='text'
         name='country'

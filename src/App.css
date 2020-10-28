@@ -17,14 +17,14 @@
 }
 
 .countryFlag{
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     grid-row: 1 / span 3;
 }
 
 .countryInfo{
     display: grid;
-    grid-template-columns: repeat(3,300px);
+    grid-template-columns: 400px 200px 200px;
     grid-template-rows: 50px 1fr 1fr;
     column-gap: 50px;
     justify-content: center;
@@ -38,3 +38,20 @@
 .specificlInfo{
     grid-column: 2;
 }
+
+.country{
+    margin-top: 10%;
+    margin-left: 15px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.themeSwitcher{
+    padding: 20px;
+    justify-self: end;
+}
+
