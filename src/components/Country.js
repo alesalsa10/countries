@@ -17,27 +17,38 @@ export default function Country() {
 
   return (
     <div>
-      {data && (
-        <div>
-          {data.map((info) => (
-            <div className='CountryInfo'>
-              <div>
-                <img className='countryFlag' src={info.flag} alt="flag"/>
-              </div>
-              <div>
-                <h2> {info.name} </h2>
-                <p> Native Name: {info.nativeName} </p>
-                <p> Population: {info.population} </p>
-                <p> Region: {info.region} </p>
-                <p>Sub Region: {info.subregion} </p>
-                <p>Capital: {info.capital} </p>
-                <p>Currencies: {info.currencies.map(currency => (<span> {currency.name} </span>))} </p>
-                <p>languages: {info.languages.map(language => (<span> {language.name} </span>))} </p>
-              </div>
+      {data &&
+        data.map((info) => (
+          <div className='countryInfo'>
+            <div>
+              <img className='countryFlag' src={info.flag} alt='flag' />
             </div>
-          ))}
-        </div>
-      )}
+            <div  className='countryName'>
+              <h2> {info.name} </h2>
+            </div>
+            <div className='specificlInfo'>
+              <p> Native Name: {info.nativeName} </p>
+              <p> Population: {info.population} </p>
+              <p> Region: {info.region} </p>
+              <p>Sub Region: {info.subregion} </p>
+              <p>Capital: {info.capital} </p>
+            </div>
+            <div className='moreInfo'>
+              <p>
+                Currencies:{' '}
+                {info.currencies.map((currency) => (
+                  <span> {currency.name} </span>
+                ))}{' '}
+              </p>
+              <p>
+                languages:{' '}
+                {info.languages.map((language) => (
+                  <span> {language.name} </span>
+                ))}{' '}
+              </p>
+            </div>
+          </div>
+        ))}
     </div>
   );
 }

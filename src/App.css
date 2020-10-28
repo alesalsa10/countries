@@ -15,3 +15,26 @@
 .generalInfo{
     font-weight: 600;
 }
+
+.countryFlag{
+    width: 300px;
+    height: 200px;
+    grid-row: 1 / span 3;
+}
+
+.countryInfo{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: 50px 1fr 1fr;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+.countryName{
+    grid-column: 2 / span 2;
+    grid-row: 1;
+}
+
+.specificlInfo{
+    grid-column: 2;
+}
