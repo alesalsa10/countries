@@ -1,0 +1,55 @@
+.country {
+  margin-top: 10%;
+  margin-left: 15px;
+}
+
+.countryInfo {
+  display: grid;
+  grid-template-columns: 400px 200px 200px;
+  grid-template-rows: 50px 1fr 1fr;
+  column-gap: 50px;
+  justify-content: center;
+}
+
+.countryFlag{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .countryInfo {
+    display: block;
+    text-align: center;
+  }
+  .countryFlag {
+    width: 300px;
+    height: 200px;
+    align-self: center;
+  }
+  .moreInfo {
+    margin-top: 2rem;
+  }
+  .main{
+      text-align: left;
+      margin-left: 5rem;
+  }
+}
+
+.countryName {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+}
+
+.specificlInfo {
+  grid-column: 2;
+}
+
+.country{
+    margin-top: 10%;
+    margin-left: 15px;
+}
+
+.spans{
+    font-weight: 600;
+}

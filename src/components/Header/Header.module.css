@@ -1,0 +1,41 @@
+.header {
+  display: grid;
+  grid-template-columns: 460px 460px;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.headerName {
+  margin: 0;
+  padding: 0;
+}
+
+.themeSwitcher {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.button {
+  border: none;
+  justify-self: end;
+}
+
+.light {
+  background-color: #e2e2e2;
+  color: #363537;
+}
+
+.dark {
+  background-color: #363537;
+  color: #e2e2e2;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem;
+    }
+    .headerName{
+        font-size: large
+    }
+  }
