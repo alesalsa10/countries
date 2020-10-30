@@ -27,7 +27,7 @@ function App() {
         <GlobalStyles/>
         <Header onClick={toggleTheme} theme={theme} />
         <Switch>
-          <Route path='/:id' children={<Country />} />
+          <Route path='/:id' children={<Country theme={theme}/>} />
           <Route exact path='/'>
             <Countries theme={theme}/>
           </Route>

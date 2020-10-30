@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { lookupCountry } from '../../api/httpHooks';
 import styles from './Country.module.css';
+import Button from '../Button/Button'
 
-export default function Country() {
+export default function Country({theme}) {
   const [data, setData] = useState(null);
   let { id } = useParams();
 
@@ -17,6 +18,7 @@ export default function Country() {
 
   return (
     <div className={styles.country}>
+      <Button theme={theme}/>
       {data &&
         data.map((info) => (
           <div key ={info.name} className={styles.countryInfo}>
