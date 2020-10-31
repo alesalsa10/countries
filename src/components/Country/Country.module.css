@@ -13,7 +13,7 @@
 
 .countryFlag{
     width: 400px;
-    height: 300px;
+    height: 325px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -40,6 +40,15 @@
   grid-row: 1;
 }
 
+.borders{
+  grid-column: 2 / span 3;
+  grid-row: 3;
+}
+
+.borderName{
+  margin-right: 0.5rem;
+}
+
 .specificlInfo {
   grid-column: 2;
 }
@@ -51,4 +60,9 @@
 
 .spans{
     font-weight: 600;
+}
+
+.countryLinks{
+  text-decoration: none;
+  color: inherit
 }

@@ -28,3 +28,12 @@ export const lookupCountry = async (name) => {
     console.log('error', error)
   }
 }
+
+export const codeToCountry = async (code) => {
+  try{
+    const response = await axios.get(`${baseurl}alpha/${code}`)
+    return response.data
+  } catch(error){
+    console.log('error', error)
+  }
+}
