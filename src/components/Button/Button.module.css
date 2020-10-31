@@ -6,7 +6,7 @@
 
 .buttonDiv{
     display: grid;
-    grid-template-columns: 475px 475px;
+    grid-template-columns: 450px 450px;
     justify-content: center;
 }
 @media only screen and (max-width: 600px) {
