@@ -30,12 +30,22 @@
   color: #e2e2e2;
 }
 
+@media only screen and (max-width: 900px) {
+  .header{
+    grid-template-columns: 300px 300px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
     .header{
-        grid-template-columns: 1fr 1fr;
-        margin: 2rem;
+      max-width: 100vw;
+      grid-template-columns: 1fr 1fr;
+      margin: 2rem;
+        
     }
     .headerName{
         font-size: large
     }
   }
+
+  

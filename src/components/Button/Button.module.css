@@ -9,13 +9,7 @@
     grid-template-columns: 450px 450px;
     justify-content: center;
 }
-@media only screen and (max-width: 600px) {
-    .buttonDiv{
-        display: block;
-        text-align: left;
-        margin-left: 3rem;
-    }
-  }
+
 .dark{
     background-color: rgb(63, 62, 62);
     color: white;
@@ -25,3 +19,11 @@
     background-color: white;
     color: black
 }
+
+@media only screen and (max-width: 900px) {
+    .buttonDiv{
+        display: block;
+        text-align: left;
+        margin-left: 2rem;
+    }
+  }
