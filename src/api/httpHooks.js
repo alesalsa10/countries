@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let baseurl = 'https://restcountries.eu/rest/v2/';
+let baseurl = 'https://restcountries.com/v2/';
 
 export const fetchAllCountries = async () => {
   try {
